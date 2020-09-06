@@ -1,280 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,900|Caveat');
 
-/*-----------------------------------------------
-   Base Elements Styles
------------------------------------------------*/
-
+/*--------- Basic element styling ---------*/
 * {
-	box-sizing: border-box;
- }
- 
- body {
-	font-family: 'Open Sans', sans-serif;
-	color: #3a3a3a;
-	line-height: 1.6;
-	background-color: #297fb981;
-	text-align: center;
- }
- 
- p {
-	 font-size: 1.2em;
-	 margin-bottom: 1.8em;
- }
- 
- h2,
- h3,
- a {
-	 color: #3a3a3a;
- }
- 
- h2,
- h3 {
-	 margin-top: 0;
- }
- 
- a {
-	 text-decoration: none;
- }
- 
- img {
-	max-width: 100%;
- }
- 
- ul {
-	list-style: none;
-	padding-left: 0;
- }
- 
- /* ---- Float clearfix ---- */
- 
- .clearfix::after {
-	content: " ";
-	display: table;
-	clear: both;
- }
- 
- /*-----------------------------------------------
-	Base Layout Styles
- -----------------------------------------------*/
- /* ---- Containers ---- */
- 
- .main-container {
-	margin-top: 50px;
-	margin-bottom: 50px;
- }
- 
- .main-container:last-child {
-	margin-bottom: 10px;
- }
- 
- .main-container,
- .main-container h2 {
-	color: #fff;
- }
- 
- .main-container h1,
- .main-container h2,
- .main-container a {
-	color: #feeb6e;
- }
- 
- .main-nav a:hover {
-	font-weight: 700;
-	color: #fff;
- }
- 
- .secondary-container {
-	background-color: #fff;
- }
- 
- .container {
-	padding-right: 1em;
-	padding-left: 1em;
-	/*margin-bottom: 2em;*/
- }
- 
- /* ---- Navigation ---- */
- .name {
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 700;
- }
- 
- .main-nav li {
-	background-color: #18222B;
-	margin: .5em .5em;
- }
- 
- .main-nav a {
-	text-transform: uppercase;
-	font-weight: 600;
-	display: block;
-	padding: 13px 15px;
- }
- 
- /* ---- About ---- */
- 
- .prof-img {
-	max-width: 367px;
- }
- 
- /* ---- Portfolio ---- */
- 
- .portfolio {
-	padding-top: 2em;
-	padding-bottom: 1em;
- }
- 
- .portfolio-list {
-	margin-top: 2.5em;
- }
- 
- .portfolio-list li h3{
-	margin-top: 1.5em;
-	font-size: 1.6em;
-	font-weight: 600;
- }
- 
- /* ---- Skills ---- */
- .skills {
-	border-top: 2px solid #2980B9;
-	padding-top: 1em;
-	padding-bottom: 2em;
- }
- 
- .skills-list li {
-	float: left;
-	width: 46%;
-	margin: 2%;
- }
- 
- /* ---- Contact ---- */
- 
- .contact ul li{
-	font-size: 1.3em;
- }
- 
- .contact li a {
-	color: #feeb6e;
-	border-bottom: 2px dotted #feeb6e;
- }
- 
- .contact li a:hover {
-	border-bottom: 3px dotted #feeb6e;
- }
- 
- /* ---- Footer ---- */
- .footer-name {
-	float: left;
-	font-size: 1.3em;
- }
- 
- .footer-nav {
-	margin: 0;
-	float: right;
-	text-transform: uppercase;
-	font-weight: 700;
- }
- 
- footer nav {
-	border-top: 1px solid #fff;
-	padding-top: 1.5em;
- }
- 
- .footer-desctop {
-	display: none;
- }
- 
- /*-----------------------------------------------
-	Media Queries
- -----------------------------------------------*/
- /* ---- >769 ---- */
- @media (min-width: 768px) {
- 
-	.container {
-	   width: 95%;
-	   margin: 0 auto;
-	}
- 
-	.main-nav li {
-	   display: inline-block;
-	   background-color: inherit;
-	}
- 
-	.about {
-	   text-align: left;
-	}
- 
-	.prof-img {
-	   float: right;
-	   padding-left: 1.2em;
-	}
- 
-	.portfolio-list li {
-	   float: left;
-	   width: 46%;
-	   margin: 2%;
-	   font-size: .85em;
-	}
- 
-	.portfolio-list li:nth-child(2n+1){
-	   clear: both;
-	}
- 
-	.portfolio-list li h3 {
-	   margin-top: .8em;
-	}
- 
-	.skills-list li {
-	   width: 21%;
-	}
- 
-	.contact{
-	   margin-top: 3em;
-	   margin-bottom: 4em;
-	}
- 
-	.footer-desctop {
-	   display: block;
-	}
- 
-	.footer-mobile {
-	   display: none;
-	}
- 
-	.footer-desctop li  a{
-	   margin-right: 10px;
-	}
- 
- }
- 
- /* ---- >1024 ---- */
- @media (min-width: 1024px) {
- 
-	.main-container {
-	   margin-top: 1em;
-	}
- 
-	.container {
-	   width: 85%;
-	   max-width: 1150px;
-	}
- 
-	.name {
-	   float: left;
-	}
- 
-	.main-nav{
-	   float: right;
-	}
- 
-	.portfolio-list li {
-	   width: 28.3333%;
-	}
- 
-	.portfolio-list li:nth-child(3n+1){
-	   clear: both;
-	}
- 
-	.portfolio-list li:nth-child(2n+1){
-	   clear: none;
-	}
- }
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    text-align: center;
+    font-family: 'Roboto', "Caveat", sans-serif;
+    color: #4a4a4a;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h3 {
+    font-weight: 900;
+    margin: 0;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #4a4a4a;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0.5em;
+    transition: 250ms ease-in;
+}
+
+a:hover {
+    /* color: #fff; */
+    background-color: #99d6ff;
+}
+
+p {
+    font-weight: 300;
+    padding-bottom: 2em;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+li {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/*--------- Basic layout styling ---------*/
+.wrap {
+    width: 90%;
+    margin: auto;
+}
+
+.bgcolor {
+    background: linear-gradient(to bottom, #4096ee 0%, #60abf8 56%, #7abcff 100%)
+}
+.bgcolor2 {
+    background: linear-gradient(to top, #4096ee 0%, #60abf8 56%, #7abcff 100%)
+}
+
+/*---------- header styles ----------*/
+.intro {
+    padding-bottom: 2em;
+}
+
+.title {
+    padding: 0.5em 0
+}
+
+.intro-article {
+    font: 1.2em "Caveat";
+    color: #fff;
+    text-shadow: 0 1px 5px black;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+
+/*---------- Content styles ----------*/
+/*---------- Contact & footer styles ----------*/
+.contact {
+    padding: 3em 0;
+    border-bottom: 1px #4a4a4a solid;
+}
+
+.contact p {
+    margin: 0 auto;
+}
+
+.contactDetails {
+    display: inline-block;
+    color: #7f7f7f;
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2em 0;
+}
+
+.footer h3,
+.back2top {
+    font-size: 0.8em;
+    background-color: inherit;
+}
+
+.foot-display {
+    display: none;
+}
+
+/*---------- Media Query ----------*/
+@media screen and (min-width: 768px) {
+
+    /*---------- Tablet base layout ----------*/
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*---------- Tablet header layout ----------*/
+    .header {
+        flex-direction: column;
+    }
+
+    .nav ul,
+    .nav a {
+        flex: 1 300px;
+        margin: 0;
+        background-color: inherit;
+    }
+
+    .intro {
+        justify-content: space-between;
+    }
+
+    .profile {
+        order: 1;
+        align-self: flex-start;
+        width: 40%
+    }
+
+    .intro-article {
+        text-align: left;
+        margin-top: 0;
+        width: 50%
+    }
+
+    /*---------- Tablet content layout ----------*/
+    .portfo-title {
+        /* font-size: 1em; */
+        padding: 1em 0;
+    }
+
+    .portfolios {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .portfolio {
+        flex: 1 50%;
+        flex-direction: column;
+        padding: 0 0.5em
+    }
+
+    .contentT {
+        margin: 0.5em 0
+    }
+
+    .contentP {
+        width: 80%;
+    }
+
+    /*---------- Tablet Contact and footer ----------*/
+    .contact {
+        flex-direction: column;
+        padding: 2em 0 1em;
+    }
+
+    .contact-title {
+        font-size: 0.8em
+    }
+
+    .contact p {
+        width: 80%;
+        margin: 0.5em;
+    }
+
+    .back2top {
+        display: none;
+    }
+
+    .footer {
+        padding: 1em 0 0;
+    }
+
+    .foot-display {
+        display: inline-block;
+    }
+
+    .foot-display {
+        font-size: 0.5em
+    }
+}
+
+/*---------- Media Query ----------*/
+@media screen and (min-width: 1024px) {
+    .wrap {
+        max-width: 1024px;
+    }
+
+    /*---------- Desktop header layout ----------*/
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 1em 0;
+    }
+
+    .intro {
+        align-items: flex-start;
+    }
+
+    .profile {
+        order: 1;
+        align-self: flex-start;
+        width: 40%
+    }
+
+    .intro-article {
+        font-size: 1.4em;
+        text-align: left;
+    }
+
+    /*---------- Desktop content layout ----------*/
+    .portfo-title {
+        font-size: 1em;
+    }
+
+    .portfolios {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .portfolio {
+        flex: 1 33%;
+    }
+
+    .contentT {
+        margin: 1em 0 0
+    }
+
+    .contentP {
+        width: 90%;
+        font-size: 0.9em;
+        margin-top: 0.4em;
+    }
+    .skills {
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    /*---------- Desktop Contact and footer ----------*/
+    .contact p {
+        width: 60%;
+    }
+}
+
+/*---------- clearfix ----------*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
